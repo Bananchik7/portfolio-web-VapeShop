@@ -97,7 +97,7 @@ header a {
   background: #f5f4fa;
 }
 .menu__container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 .menu_list {
@@ -110,7 +110,7 @@ header a {
   display: flex;
 }
 .menu__list li {
-  margin-left: 90px;
+  margin-left: 8%;
 }
 .menu__list li a {
   text-transform: uppercase;
@@ -130,4 +130,21 @@ header a {
 .title__title a {
   font-size: 25px;
   font-weight: bold;
+}
+.catalog__conteiner {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.catalog__filter {
+  width: 25%;
+  height: 100px;
+  background-color: black;
+  margin: 0 auto;
+}
+.catalog__wrapper {
+  width: 75%;
+  height: 100px;
+  background-color: aqua;
+  margin: 0 auto;
 }
