@@ -67,8 +67,125 @@
     </section>
     <section id="catalog" class="catalog">
       <div class="catalog__conteiner">
-        <div class="catalog__filter"></div>
-        <div class="catalog__wrapper"></div>
+        <div class="catalog__filter">
+          <form action="/catalog/odnorazovye_sigarety/">
+            <div class="filter__group">
+              <div class="filter__group-title">Цена</div>
+              <div class="filter__group-body">
+                <input class="form__input" placeholder="От 200" />
+                <input class="form__input" placeholder="До 1290" />
+              </div>
+            </div>
+            <div class="filter__group">
+              <div class="filter__group-title">Вкус</div>
+              <div class="filter__group-body">
+                <div class="filter__group-checkbox">
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Выпечка</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Десерты</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Кислый</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Кофейный</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Орехи</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Напитки</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Фруктовый</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter__group">
+              <div class="filter__group-title">Количество затяжек</div>
+              <div class="filter__group-body">
+                <div class="filter__group-checkbox">
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">300</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">400</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">500</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">600</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">800</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">1000</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">1200</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">1500</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter__group">
+              <div class="filter__group-title">Холодок</div>
+              <div class="filter__group-body">
+                <div class="filter__group-checkbox">
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Да</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Нет</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="catalog__sortorder">
+          <form class="catalog__sortorder-form">
+            <div class="catalog__sortorder-field">
+              <select class="form__select">
+                <option value="20">20 товаров</option>
+                <option value="30">30 товаров</option>
+                <option value="40">40 товаров</option>
+              </select>
+            </div>
+            <div class="catalog__sortorder-field">
+              <select class="form__select">
+                <option value="sort">По умолчанию</option>
+                <option value="shows">Сначала популярные</option>
+                <option value="price_asc">Сначала недорогие</option>
+                <option value="price_desc">Сначала дорогие</option>
+              </select>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </body>
