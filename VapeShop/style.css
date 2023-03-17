@@ -270,7 +270,8 @@ header a {
   font-size: 18px;
 }
 .about {
-  background-color: black;
+  background: url(../VapeShop/image/about__background.jpeg) no-repeat center top /
+    cover;
 }
 .about__conteiner {
   display: flex;
@@ -280,6 +281,35 @@ header a {
 .about__content {
   color: aliceblue;
 }
+.about__title {
+  margin-top: 50px;
+  margin-left: 20%;
+  font-size: 40px;
+}
 .about__info {
+  display: flex;
+}
+.about__info-text {
+  width: 40%;
+  margin-top: 100px;
   color: aliceblue;
+  font-size: 27px;
+  margin-bottom: 50px;
+  margin-left: 5%;
+}
+.about__info-line {
+  width: 20%;
+  margin-top: 2%;
+}
+.about__info-text-two {
+  width: 35%;
+  margin-top: 34%;
+  color: aliceblue;
+  font-size: 27px;
+  margin-bottom: 50px;
+}
+.delivery__conteiner {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
 }
