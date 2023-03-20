@@ -177,17 +177,6 @@ header a {
 .catalog__sortorder-field {
   margin-right: 10%;
 }
-.catalog__sortorder-field::after {
-  right: 16px;
-  top: 50%;
-  margin-top: -1px;
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 4px 4.5px 0;
-}
 .form__select {
   -webkit-appearance: none;
   font-size: 13px;
@@ -310,48 +299,177 @@ header a {
 .delivery__conteiner {
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .delivery__title {
-  font-size: 30px;
+  font-size: 100px;
+  color: #b1b9c2;
   width: 30%;
   margin-left: 10%;
   font-weight: bold;
+  margin-top: 50px;
+  background: url(../VapeShop/image/delivery__background.png) no-repeat center
+    top / cover;
 }
 .delivery__content {
   display: flex;
   margin-top: 50px;
 }
-.delivery__title {
-  margin-top: 50px;
-}
+
 .delivery__pickup-info {
   width: 25%;
-  border: 1px solid #b1b9c2;
+  border: 1px solid #a1ffb7;
   padding: 50px 50px 50px 50px;
 }
 .delivery__pickup-title {
-  font-size: 20px;
+  font-size: 45px;
+  color: #b1b9c2;
   font-weight: bold;
   margin-bottom: 30px;
   text-align: center;
 }
 .delivery__content-info {
   width: 50%;
-  border: 1px solid #b1b9c2;
+  border: 2px solid #a1ffb7;
   padding: 50px 50px 50px 50px;
 }
 .delivery__info-title {
-  font-size: 20px;
+  font-size: 50px;
+  color: #b1b9c2;
   font-weight: bold;
   margin-bottom: 30px;
   text-align: center;
 }
 .delivery__content-law {
   width: 25%;
-  border: 1px solid #b1b9c2;
+  border: 1px solid #a1ffb7;
   padding: 100px 50px 50px 50px;
 }
+
+.contact {
+  background: url(../VapeShop/image/contact__background.png) no-repeat center
+    top / cover;
+}
 .contact__conteiner {
+  margin: 0 auto;
+}
+.contact__title {
+  padding-top: 50px;
+  font-size: 100px;
+  color: #b1b9c2;
+  margin-left: 18%;
+  font-weight: bold;
+}
+.contact__info {
+  display: flex;
+  margin-top: 20px;
+}
+.contact__info-details {
+  width: 50%;
+  margin-left: 100px;
+}
+.contact__info-title-internet {
+  color: #b1b9c2;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.contact__info-contact-internet {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.contact__info-title-shop {
+  color: #b1b9c2;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.contact__info-contact-shop {
+  font-size: 20px;
+}
+.contact__info-map {
+  width: 50%;
+}
+iframe {
+  height: 500px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+}
+.footer {
+  background-color: black;
+}
+.footer__conteiner {
   width: 80%;
   margin: 0 auto;
+  color: aliceblue;
+}
+.footer__info {
+  display: flex;
+}
+.footer__logo-image {
+  margin-bottom: 30px;
+}
+.footer__info-logo {
+  margin-top: 50px;
+  margin-right: 100px;
+}
+.footer__info-row {
+  font-size: 20px;
+  margin-right: 100px;
+  margin-top: 60px;
+}
+.footer__row-menu li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 13px;
+  color: #f5f4fa;
+}
+.footer__row-menu li a:hover {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #a1ffb7;
+}
+.footer__row-title {
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+.footer__info-contact {
+  margin-right: 100px;
+  margin-top: 60px;
+}
+.footer__contact-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.footer__contact-social {
+  display: flex;
+}
+.footer__contact-connection {
+  margin-top: 100px;
+}
+.footer__social-image {
+  margin-left: 32px;
+  width: 50px;
+  height: 50px;
+}
+.footer__image-line {
+  margin-top: 40px;
+  margin-left: 10%;
+  width: 1000px;
+  height: 20px;
+}
+.footer__authotship {
+  display: flex;
+  margin-left: 15%;
+  margin-top: 8px;
+  padding-bottom: 20px;
+  font-size: 13px;
+}
+.footer__git-image {
+  margin-top: -7px;
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
 }
