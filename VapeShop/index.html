@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>VapeShop</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="media.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
   </head>
   <body>
     <header id="header" class="header">
@@ -59,11 +59,25 @@
       <div class="menu__container">
         <div class="menu__row">
           <ul class="menu__list">
-            <li><a>Электронные сигареты</a></li>
-            <li><a>Одноразовые сигареты</a></li>
-            <li><a>Жидкости</a></li>
-            <li><a>Атомайзеры</a></li>
-            <li><a>Самозамес</a></li>
+            <li>
+              <a href="#menu" class="menu__electronnye_sigarety"
+                >Электронные сигареты</a
+              >
+            </li>
+            <li>
+              <a href="#menu" class="menu__odnorazovye_sigarety"
+                >Одноразовые сигареты</a
+              >
+            </li>
+            <li>
+              <a href="#menu" class="menu__zhidkosti">Жидкости</a>
+            </li>
+            <li>
+              <a href="#menu" class="menu__atomayzery">Атомайзеры</a>
+            </li>
+            <li>
+              <a href="#menu" class="menu__komplektuyushchie">Комплектующие</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -73,12 +87,223 @@
         <div class="title__title"><a>Каталог</a></div>
       </div>
     </section>
-    <!-- section  /catalog/odnorazovye_sigarety -->
-
-    <!-- <section id="catalog" class="catalog">
+    <section id="catalog" class="catalog">
       <div class="catalog__conteiner">
-        <div class="catalog__filter">
-          <form action="/catalog/odnorazovye_sigarety/">
+        <div class="catalog__conteiner__electronnye_sigarety">
+          <div class="catalog__filter">
+            <div class="filter__group">
+              <div class="filter__group-title">Цена</div>
+              <div class="filter__group-body">
+                <input class="form__input" placeholder="От 200" />
+                <input class="form__input" placeholder="До 1290" />
+              </div>
+            </div>
+            <div class="filter__group">
+              <div class="filter__group-title">Цвет</div>
+              <div class="filter__group-body">
+                <div class="filter__group-checkbox">
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Арт</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Желтый</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Белый</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Коричневый</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Черный</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Зеленый</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Золотой</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter__group">
+              <div class="filter__group-title">Посадочный диаметр</div>
+              <div class="filter__group-body">
+                <div class="filter__group-checkbox">
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">22 мм</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">24 мм</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">25 мм</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">26 мм</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">28 мм</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">30 мм</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter__group">
+              <div class="filter__group-title">Регулировка мощности</div>
+              <div class="filter__group-body">
+                <div class="filter__group-checkbox">
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Да</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Нет</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__sortorder">
+            <form class="catalog__sortorder-form">
+              <div class="catalog__sortorder-field">
+                <select class="form__select">
+                  <option value="20">20 товаров</option>
+                  <option value="30">30 товаров</option>
+                  <option value="40">40 товаров</option>
+                </select>
+              </div>
+              <div class="catalog__sortorder-field">
+                <select class="form__select">
+                  <option value="sort">По умолчанию</option>
+                  <option value="shows">Сначала популярные</option>
+                  <option value="price_asc">Сначала недорогие</option>
+                  <option value="price_desc">Сначала дорогие</option>
+                </select>
+              </div>
+            </form>
+            <div class="catalog__wrapper">
+              <div class="catalog__wrapper-product" id="electronnye_sigarety/1">
+                <img
+                  class="catalog__product-image"
+                  src="image/electronnye_sigarety/1.jpeg"
+                />
+                <div class="catalog__product-name">
+                  FreeMax Marvos X 100W Box Kit 5ml Red
+                </div>
+                <div class="catalog__product-price">3 190 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+              <div class="catalog__wrapper-product" id="electronnye_sigarety/2">
+                <img
+                  class="catalog__product-image"
+                  src="image/electronnye_sigarety/2.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Geekvape Aegis MAX 100W 21700 Mod Black Tung
+                </div>
+                <div class="catalog__product-price">3 290 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+              <div class="catalog__wrapper-product" id="electronnye_sigarety/3">
+                <img
+                  class="catalog__product-image"
+                  src="image/electronnye_sigarety/3.jpeg"
+                />
+                <div class="catalog__product-name">
+                  FreeMax Marvos X 100W Box Kit 5ml Blue
+                </div>
+                <div class="catalog__product-price">3 190 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+              <div class="catalog__wrapper-product" id="electronnye_sigarety/4">
+                <img
+                  class="catalog__product-image"
+                  src="image/electronnye_sigarety/4.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Vaporesso Target 80 Box Kit 3000mAh Gray
+                </div>
+                <div class="catalog__product-price">3 590 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+              <div class="catalog__wrapper-product" id="electronnye_sigarety/5">
+                <img
+                  class="catalog__product-image"
+                  src="image/electronnye_sigarety/5.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Lost Vape Centaurus Q200 Box Mod Gold/Teak Wood
+                </div>
+                <div class="catalog__product-price">3 590 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+              <div class="catalog__wrapper-product" id="electronnye_sigarety/6">
+                <img
+                  class="catalog__product-image"
+                  src="image/electronnye_sigarety/6.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Vapelustion Hannya MOD 230W II White
+                </div>
+                <div class="catalog__product-price">4 450 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+              <div class="catalog__wrapper-product" id="electronnye_sigarety/7">
+                <img
+                  class="catalog__product-image"
+                  src="image/electronnye_sigarety/7.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Eleaf iStick Power Mono Kit 3500mAh Green Black
+                </div>
+                <div class="catalog__product-price">3 250 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__conteiner">
+        <div class="catalog__conteiner__odnorazovye_sigarety">
+          <div class="catalog__filter">
             <div class="filter__group">
               <div class="filter__group-title">Цена</div>
               <div class="filter__group-body">
@@ -175,135 +400,369 @@
                 </div>
               </div>
             </div>
-          </form>
-        </div>
-        <div class="catalog__sortorder">
-          <form class="catalog__sortorder-form">
-            <div class="catalog__sortorder-field">
-              <select class="form__select">
-                <option value="20">20 товаров</option>
-                <option value="30">30 товаров</option>
-                <option value="40">40 товаров</option>
-              </select>
-            </div>
-            <div class="catalog__sortorder-field">
-              <select class="form__select">
-                <option value="sort">По умолчанию</option>
-                <option value="shows">Сначала популярные</option>
-                <option value="price_asc">Сначала недорогие</option>
-                <option value="price_desc">Сначала дорогие</option>
-              </select>
-            </div>
-          </form>
-          <div class="catalog__wrapper">
-            <div class="catalog__wrapper-product" id="odnorazovye_sigarety/1">
-              <img
-                class="catalog__product-image"
-                src="image/odnorazovye_sigarety/1.jpeg"
-              />
-              <div class="catalog__product-name">
-                NOQO 1500 Мандарин Морозный
+          </div>
+          <div class="catalog__sortorder">
+            <form class="catalog__sortorder-form">
+              <div class="catalog__sortorder-field">
+                <select class="form__select">
+                  <option value="20">20 товаров</option>
+                  <option value="30">30 товаров</option>
+                  <option value="40">40 товаров</option>
+                </select>
               </div>
-              <div class="catalog__product-price">590 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="odnorazovye_sigarety/2">
-              <img
-                class="catalog__product-image"
-                src="image/odnorazovye_sigarety/2.jpeg"
-              />
-              <div class="catalog__product-name">
-                NOQO 1500 Черника Морозная
+              <div class="catalog__sortorder-field">
+                <select class="form__select">
+                  <option value="sort">По умолчанию</option>
+                  <option value="shows">Сначала популярные</option>
+                  <option value="price_asc">Сначала недорогие</option>
+                  <option value="price_desc">Сначала дорогие</option>
+                </select>
               </div>
-              <div class="catalog__product-price">650 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="odnorazovye_sigarety/3">
-              <img
-                class="catalog__product-image"
-                src="image/odnorazovye_sigarety/3.jpeg"
-              />
-              <div class="catalog__product-name">
-                Pons Magnum 2750 Blackcurrant Raspberry
+            </form>
+            <div class="catalog__wrapper">
+              <div class="catalog__wrapper-product" id="odnorazovye_sigarety/1">
+                <img
+                  class="catalog__product-image"
+                  src="image/odnorazovye_sigarety/1.jpeg"
+                />
+                <div class="catalog__product-name">
+                  NOQO 1500 Мандарин Морозный
+                </div>
+                <div class="catalog__product-price">590 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-              <div class="catalog__product-price">730 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="odnorazovye_sigarety/4">
-              <img
-                class="catalog__product-image"
-                src="image/odnorazovye_sigarety/4.jpeg"
-              />
-              <div class="catalog__product-name">
-                Pons Boxter 1350 Strawberry Banana Shake
+              <div class="catalog__wrapper-product" id="odnorazovye_sigarety/2">
+                <img
+                  class="catalog__product-image"
+                  src="image/odnorazovye_sigarety/2.jpeg"
+                />
+                <div class="catalog__product-name">
+                  NOQO 1500 Черника Морозная
+                </div>
+                <div class="catalog__product-price">650 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-              <div class="catalog__product-price">399 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="odnorazovye_sigarety/5">
-              <img
-                class="catalog__product-image"
-                src="image/odnorazovye_sigarety/5.jpeg"
-              />
-              <div class="catalog__product-name">
-                Elf Bar TE5000 Ананас Манго Апельсин
+              <div class="catalog__wrapper-product" id="odnorazovye_sigarety/3">
+                <img
+                  class="catalog__product-image"
+                  src="image/odnorazovye_sigarety/3.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Pons Magnum 2750 Blackcurrant Raspberry
+                </div>
+                <div class="catalog__product-price">730 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-              <div class="catalog__product-price">1 390 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="odnorazovye_sigarety/6">
-              <img
-                class="catalog__product-image"
-                src="image/odnorazovye_sigarety/6.jpeg"
-              />
-              <div class="catalog__product-name">
-                Elf Bar Ultra BC5000 Tropical Rainbow Blast
+              <div class="catalog__wrapper-product" id="odnorazovye_sigarety/4">
+                <img
+                  class="catalog__product-image"
+                  src="image/odnorazovye_sigarety/4.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Pons Boxter 1350 Strawberry Banana Shake
+                </div>
+                <div class="catalog__product-price">399 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-              <div class="catalog__product-price">1 450 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="odnorazovye_sigarety/7">
-              <img
-                class="catalog__product-image"
-                src="image/odnorazovye_sigarety/7.jpeg"
-              />
-              <div class="catalog__product-name">
-                Lost Mary OS 4000 Blue Cotton Candy
+              <div class="catalog__wrapper-product" id="odnorazovye_sigarety/5">
+                <img
+                  class="catalog__product-image"
+                  src="image/odnorazovye_sigarety/5.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Elf Bar TE5000 Ананас Манго Апельсин
+                </div>
+                <div class="catalog__product-price">1 390 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-              <div class="catalog__product-price">1 250 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
+              <div class="catalog__wrapper-product" id="odnorazovye_sigarety/6">
+                <img
+                  class="catalog__product-image"
+                  src="image/odnorazovye_sigarety/6.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Elf Bar Ultra BC5000 Tropical Rainbow Blast
+                </div>
+                <div class="catalog__product-price">1 450 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+              <div class="catalog__wrapper-product" id="odnorazovye_sigarety/7">
+                <img
+                  class="catalog__product-image"
+                  src="image/odnorazovye_sigarety/7.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Lost Mary OS 4000 Blue Cotton Candy
+                </div>
+                <div class="catalog__product-price">1 250 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
-
-    <!-- section  /catalog/electronnye_sigarety-->
-    <!-- <section id="catalog" class="catalog">
       <div class="catalog__conteiner">
-        <div class="catalog__filter">
-          <form action="/catalog/electronnye_sigarety/">
+        <div class="catalog__conteiner__zhidkosti">
+          <div class="catalog__filter">
+            <div class="filter__group">
+              <div class="filter__group-title">Цена</div>
+              <div class="filter__group-body">
+                <input class="form__input" placeholder="От 200" />
+                <input class="form__input" placeholder="До 1290" />
+              </div>
+            </div>
+            <div class="filter__group">
+              <div class="filter__group-title">Вкус</div>
+              <div class="filter__group-body">
+                <div class="filter__group-checkbox">
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Выпечка</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Десерты</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Кислый</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Кофейный</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Орехи</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Напитки</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Фруктовый</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter__group">
+              <div class="filter__group-title">Крепость</div>
+              <div class="filter__group-body">
+                <div class="filter__group-checkbox">
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">0 мг</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">3 мг</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">6 мг</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">9 мг</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">12 мг</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">18 мг</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter__group">
+              <div class="filter__group-title">Холодок</div>
+              <div class="filter__group-body">
+                <div class="filter__group-checkbox">
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Да</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Нет</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter__group">
+              <div class="filter__group-title">Тип никотина</div>
+              <div class="filter__group-body">
+                <div class="filter__group-checkbox">
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Без никотина</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Гибрид</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Обычный</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Солевой</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__sortorder">
+            <form class="catalog__sortorder-form">
+              <div class="catalog__sortorder-field">
+                <select class="form__select">
+                  <option value="20">20 товаров</option>
+                  <option value="30">30 товаров</option>
+                  <option value="40">40 товаров</option>
+                </select>
+              </div>
+              <div class="catalog__sortorder-field">
+                <select class="form__select">
+                  <option value="sort">По умолчанию</option>
+                  <option value="shows">Сначала популярные</option>
+                  <option value="price_asc">Сначала недорогие</option>
+                  <option value="price_desc">Сначала дорогие</option>
+                </select>
+              </div>
+            </form>
+            <div class="catalog__wrapper">
+              <div class="catalog__wrapper-product" id="zhidkosti/1">
+                <img
+                  class="catalog__product-image"
+                  src="image/zhidkosti/1.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Grape blast (яркий вкус винограда с колой) 20мг STALKER SALT
+                  30мл
+                </div>
+                <div class="catalog__product-price">450 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+              <div class="catalog__wrapper-product" id="zhidkosti/2">
+                <img
+                  class="catalog__product-image"
+                  src="image/zhidkosti/2.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Wild mix (приятный вкус банана с клубникой) 20мг STALKER SALT
+                  30мл
+                </div>
+                <div class="catalog__product-price">450 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+              <div class="catalog__wrapper-product" id="zhidkosti/3">
+                <img
+                  class="catalog__product-image"
+                  src="image/zhidkosti/3.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Ice cola 20мг XL Pride SALT 60мл
+                </div>
+                <div class="catalog__product-price">490 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+              <div class="catalog__wrapper-product" id="zhidkosti/4">
+                <img
+                  class="catalog__product-image"
+                  src="image/zhidkosti/4.jpeg"
+                />
+                <div class="catalog__product-name">
+                  ON ICE Sour Apple Dragonfruit 3мг BLAZE SWEET&SOUR 100мл
+                </div>
+                <div class="catalog__product-price">590 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+              <div class="catalog__wrapper-product" id="zhidkosti/5">
+                <img
+                  class="catalog__product-image"
+                  src="image/zhidkosti/5.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Космополитен 20мг Brusko Salt 30мл
+                </div>
+                <div class="catalog__product-price">390 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+              <div class="catalog__wrapper-product" id="zhidkosti/6">
+                <img
+                  class="catalog__product-image"
+                  src="image/zhidkosti/6.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Sour Forest Berries 3мг BLAZE SWEET&SOUR 100мл
+                </div>
+                <div class="catalog__product-price">550 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+              <div class="catalog__wrapper-product" id="zhidkosti/7">
+                <img
+                  class="catalog__product-image"
+                  src="image/zhidkosti/7.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Peach-Passion 20мг Ultra HOTSPOT 30мл
+                </div>
+                <div class="catalog__product-price">390 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__conteiner">
+        <div class="catalog__conteiner__atomayzery">
+          <div class="catalog__filter">
             <div class="filter__group">
               <div class="filter__group-title">Цена</div>
               <div class="filter__group-body">
@@ -317,19 +776,23 @@
                 <div class="filter__group-checkbox">
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">Арт</div>
+                    <div class="form__check">Золотой</div>
                   </div>
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">Желтый</div>
+                    <div class="form__check">Красный</div>
                   </div>
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">Белый</div>
+                    <div class="form__check">Металлический</div>
                   </div>
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">Коричневый</div>
+                    <div class="form__check">Многоцветный</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Песочный</div>
                   </div>
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
@@ -337,11 +800,7 @@
                   </div>
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">Зеленый</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Золотой</div>
+                    <div class="form__check">Синий</div>
                   </div>
                 </div>
               </div>
@@ -352,175 +811,196 @@
                 <div class="filter__group-checkbox">
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
+                    <div class="form__check">12 мм</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">14 мм</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">15 мм</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">18 мм</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">20 мм</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
                     <div class="form__check">22 мм</div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter__group">
+              <div class="filter__group-title">Затяжка</div>
+              <div class="filter__group-body">
+                <div class="filter__group-checkbox">
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">24 мм</div>
+                    <div class="form__check">Свободная</div>
                   </div>
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">25 мм</div>
+                    <div class="form__check">Смешанная</div>
                   </div>
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">26 мм</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">28 мм</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">30 мм</div>
+                    <div class="form__check">Тугая</div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="filter__group">
-              <div class="filter__group-title">Регулировка мощности</div>
+              <div class="filter__group-title">Тип обдува</div>
               <div class="filter__group-body">
                 <div class="filter__group-checkbox">
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">Да</div>
+                    <div class="form__check">Боковой</div>
                   </div>
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">Нет</div>
+                    <div class="form__check">Верхний</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Нижний</div>
+                  </div>
+                  <div class="filter__group-field">
+                    <input class="form__check" type="checkbox" />
+                    <div class="form__check">Смешанный</div>
                   </div>
                 </div>
               </div>
             </div>
-          </form>
-        </div>
-        <div class="catalog__sortorder">
-          <form class="catalog__sortorder-form">
-            <div class="catalog__sortorder-field">
-              <select class="form__select">
-                <option value="20">20 товаров</option>
-                <option value="30">30 товаров</option>
-                <option value="40">40 товаров</option>
-              </select>
-            </div>
-            <div class="catalog__sortorder-field">
-              <select class="form__select">
-                <option value="sort">По умолчанию</option>
-                <option value="shows">Сначала популярные</option>
-                <option value="price_asc">Сначала недорогие</option>
-                <option value="price_desc">Сначала дорогие</option>
-              </select>
-            </div>
-          </form>
-          <div class="catalog__wrapper">
-            <div class="catalog__wrapper-product" id="electronnye_sigarety/1">
-              <img
-                class="catalog__product-image"
-                src="image/electronnye_sigarety/1.jpeg"
-              />
-              <div class="catalog__product-name">
-                FreeMax Marvos X 100W Box Kit 5ml Red
+          </div>
+          <div class="catalog__sortorder">
+            <form class="catalog__sortorder-form">
+              <div class="catalog__sortorder-field">
+                <select class="form__select">
+                  <option value="20">20 товаров</option>
+                  <option value="30">30 товаров</option>
+                  <option value="40">40 товаров</option>
+                </select>
               </div>
-              <div class="catalog__product-price">3 190 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="electronnye_sigarety/2">
-              <img
-                class="catalog__product-image"
-                src="image/electronnye_sigarety/2.jpeg"
-              />
-              <div class="catalog__product-name">
-                Geekvape Aegis MAX 100W 21700 Mod Black Tung
+              <div class="catalog__sortorder-field">
+                <select class="form__select">
+                  <option value="sort">По умолчанию</option>
+                  <option value="shows">Сначала популярные</option>
+                  <option value="price_asc">Сначала недорогие</option>
+                  <option value="price_desc">Сначала дорогие</option>
+                </select>
               </div>
-              <div class="catalog__product-price">3 290 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="electronnye_sigarety/3">
-              <img
-                class="catalog__product-image"
-                src="image/electronnye_sigarety/3.jpeg"
-              />
-              <div class="catalog__product-name">
-                FreeMax Marvos X 100W Box Kit 5ml Blue
+            </form>
+            <div class="catalog__wrapper">
+              <div class="catalog__wrapper-product" id="atomayzery/1">
+                <img
+                  class="catalog__product-image"
+                  src="image/atomayzery/1.jpeg"
+                />
+                <div class="catalog__product-name">
+                  RBA база для Joyetech Exceed Grip Pro
+                </div>
+                <div class="catalog__product-price">550 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-              <div class="catalog__product-price">3 190 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="electronnye_sigarety/4">
-              <img
-                class="catalog__product-image"
-                src="image/electronnye_sigarety/4.jpeg"
-              />
-              <div class="catalog__product-name">
-                Vaporesso Target 80 Box Kit 3000mAh Gray
+              <div class="catalog__wrapper-product" id="atomayzery/2">
+                <img
+                  class="catalog__product-image"
+                  src="image/atomayzery/2.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Клиромайзер VOOPOO TPP-X Pod Tank 5.5ml Rainbow
+                </div>
+                <div class="catalog__product-price">1 450 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-              <div class="catalog__product-price">3 590 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="electronnye_sigarety/5">
-              <img
-                class="catalog__product-image"
-                src="image/electronnye_sigarety/5.jpeg"
-              />
-              <div class="catalog__product-name">
-                Lost Vape Centaurus Q200 Box Mod Gold/Teak Wood
+              <div class="catalog__wrapper-product" id="atomayzery/3">
+                <img
+                  class="catalog__product-image"
+                  src="image/atomayzery/3.jpeg"
+                />
+                <div class="catalog__product-name">
+                  RBA база для SMOK RPM80 RGC Coil 0.6 ohm
+                </div>
+                <div class="catalog__product-price">890 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-              <div class="catalog__product-price">3 590 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="electronnye_sigarety/6">
-              <img
-                class="catalog__product-image"
-                src="image/electronnye_sigarety/6.jpeg"
-              />
-              <div class="catalog__product-name">
-                Vapelustion Hannya MOD 230W II White
+              <div class="catalog__wrapper-product" id="atomayzery/4">
+                <img
+                  class="catalog__product-image"
+                  src="image/atomayzery/4.png"
+                />
+                <div class="catalog__product-name">
+                  Hellvape Dead Rabbit V3 RTA 3.5ml Matte Full Black
+                </div>
+                <div class="catalog__product-price">2 590 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-              <div class="catalog__product-price">4 450 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="electronnye_sigarety/7">
-              <img
-                class="catalog__product-image"
-                src="image/electronnye_sigarety/7.jpeg"
-              />
-              <div class="catalog__product-name">
-                Eleaf iStick Power Mono Kit 3500mAh Green Black
+              <div class="catalog__wrapper-product" id="atomayzery/5">
+                <img
+                  class="catalog__product-image"
+                  src="image/atomayzery/5.jpeg"
+                />
+                <div class="catalog__product-name">GAS Mods Nova RDA Black</div>
+                <div class="catalog__product-price">1 390 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-              <div class="catalog__product-price">3 250 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
+              <div class="catalog__wrapper-product" id="atomayzery/6">
+                <img
+                  class="catalog__product-image"
+                  src="image/atomayzery/6.jpeg"
+                />
+                <div class="catalog__product-name">
+                  RDTA для SMOK RPM160 5.5ml
+                </div>
+                <div class="catalog__product-price">1 550 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
+              <div class="catalog__wrapper-product" id="atomayzery/7">
+                <img
+                  class="catalog__product-image"
+                  src="image/atomayzery/7.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Digiflavor Drop RDA V1.5 Blue Black
+                </div>
+                <div class="catalog__product-price">2 390 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
-
-    <!-- section  /catalog/zhidkosti-->
-    <!-- <section id="catalog" class="catalog">
       <div class="catalog__conteiner">
-        <div class="catalog__filter">
-          <form action="/catalog/zhidkosti/">
+        <div class="catalog__conteiner__komplektuyushchie">
+          <div class="catalog__filter">
             <div class="filter__group">
               <div class="filter__group-title">Цена</div>
               <div class="filter__group-body">
@@ -529,476 +1009,163 @@
               </div>
             </div>
             <div class="filter__group">
-              <div class="filter__group-title">Вкус</div>
+              <div class="filter__group-title">Затяжка</div>
               <div class="filter__group-body">
                 <div class="filter__group-checkbox">
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">Выпечка</div>
+                    <div class="form__check">Свободная</div>
                   </div>
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">Десерты</div>
+                    <div class="form__check">Смешанная</div>
                   </div>
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">Кислый</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Кофейный</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Орехи</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Напитки</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Фруктовый</div>
+                    <div class="form__check">Тугая</div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="filter__group">
-              <div class="filter__group-title">Крепость</div>
+              <div class="filter__group-title">Тип комплектующего</div>
               <div class="filter__group-body">
                 <div class="filter__group-checkbox">
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">0 мг</div>
+                    <div class="form__check">Испаритель</div>
                   </div>
                   <div class="filter__group-field">
                     <input class="form__check" type="checkbox" />
-                    <div class="form__check">3 мг</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">6 мг</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">9 мг</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">12 мг</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">18 мг</div>
+                    <div class="form__check">Картридж</div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="filter__group">
-              <div class="filter__group-title">Холодок</div>
-              <div class="filter__group-body">
-                <div class="filter__group-checkbox">
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Да</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Нет</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="filter__group">
-              <div class="filter__group-title">Тип никотина</div>
-              <div class="filter__group-body">
-                <div class="filter__group-checkbox">
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Без никотина</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Гибрид</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Обычный</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Солевой</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="catalog__sortorder">
-          <form class="catalog__sortorder-form">
-            <div class="catalog__sortorder-field">
-              <select class="form__select">
-                <option value="20">20 товаров</option>
-                <option value="30">30 товаров</option>
-                <option value="40">40 товаров</option>
-              </select>
-            </div>
-            <div class="catalog__sortorder-field">
-              <select class="form__select">
-                <option value="sort">По умолчанию</option>
-                <option value="shows">Сначала популярные</option>
-                <option value="price_asc">Сначала недорогие</option>
-                <option value="price_desc">Сначала дорогие</option>
-              </select>
-            </div>
-          </form>
-          <div class="catalog__wrapper">
-            <div class="catalog__wrapper-product" id="zhidkosti/1">
-              <img
-                class="catalog__product-image"
-                src="image/zhidkosti/1.jpeg"
-              />
-              <div class="catalog__product-name">
-                Grape blast (яркий вкус винограда с колой) 20мг STALKER SALT
-                30мл
-              </div>
-              <div class="catalog__product-price">450 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="zhidkosti/2">
-              <img
-                class="catalog__product-image"
-                src="image/zhidkosti/2.jpeg"
-              />
-              <div class="catalog__product-name">
-                Wild mix (приятный вкус банана с клубникой) 20мг STALKER SALT
-                30мл
-              </div>
-              <div class="catalog__product-price">450 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="zhidkosti/3">
-              <img
-                class="catalog__product-image"
-                src="image/zhidkosti/3.jpeg"
-              />
-              <div class="catalog__product-name">
-                Ice cola 20мг XL Pride SALT 60мл
-              </div>
-              <div class="catalog__product-price">490 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="zhidkosti/4">
-              <img
-                class="catalog__product-image"
-                src="image/zhidkosti/4.jpeg"
-              />
-              <div class="catalog__product-name">
-                ON ICE Sour Apple Dragonfruit 3мг BLAZE SWEET&SOUR 100мл
-              </div>
-              <div class="catalog__product-price">590 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="zhidkosti/5">
-              <img
-                class="catalog__product-image"
-                src="image/zhidkosti/5.jpeg"
-              />
-              <div class="catalog__product-name">
-                Космополитен 20мг Brusko Salt 30мл
-              </div>
-              <div class="catalog__product-price">390 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="zhidkosti/6">
-              <img
-                class="catalog__product-image"
-                src="image/zhidkosti/6.jpeg"
-              />
-              <div class="catalog__product-name">
-                Sour Forest Berries 3мг BLAZE SWEET&SOUR 100мл
-              </div>
-              <div class="catalog__product-price">550 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="zhidkosti/7">
-              <img
-                class="catalog__product-image"
-                src="image/zhidkosti/7.jpeg"
-              />
-              <div class="catalog__product-name">
-                Peach-Passion 20мг Ultra HOTSPOT 30мл
-              </div>
-              <div class="catalog__product-price">390 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
             </div>
           </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- section  /catalog/atomayzery/-->
-    <section id="catalog" class="catalog">
-      <div class="catalog__conteiner">
-        <div class="catalog__filter">
-          <form action="/catalog/atomayzery/">
-            <div class="filter__group">
-              <div class="filter__group-title">Цена</div>
-              <div class="filter__group-body">
-                <input class="form__input" placeholder="От 200" />
-                <input class="form__input" placeholder="До 1290" />
+          <div class="catalog__sortorder">
+            <form class="catalog__sortorder-form">
+              <div class="catalog__sortorder-field">
+                <select class="form__select">
+                  <option value="20">20 товаров</option>
+                  <option value="30">30 товаров</option>
+                  <option value="40">40 товаров</option>
+                </select>
               </div>
-            </div>
-            <div class="filter__group">
-              <div class="filter__group-title">Вкус</div>
-              <div class="filter__group-body">
-                <div class="filter__group-checkbox">
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Выпечка</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Десерты</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Кислый</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Кофейный</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Орехи</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Напитки</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Фруктовый</div>
-                  </div>
+              <div class="catalog__sortorder-field">
+                <select class="form__select">
+                  <option value="sort">По умолчанию</option>
+                  <option value="shows">Сначала популярные</option>
+                  <option value="price_asc">Сначала недорогие</option>
+                  <option value="price_desc">Сначала дорогие</option>
+                </select>
+              </div>
+            </form>
+            <div class="catalog__wrapper">
+              <div class="catalog__wrapper-product" id="komplektuyushchie/1">
+                <img
+                  class="catalog__product-image"
+                  src="image/komplektuyushchie/1.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Испаритель Smoant Battlestar Baby Coil 1.2ohm
                 </div>
+                <div class="catalog__product-price">250 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-            </div>
-            <div class="filter__group">
-              <div class="filter__group-title">Крепость</div>
-              <div class="filter__group-body">
-                <div class="filter__group-checkbox">
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">0 мг</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">3 мг</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">6 мг</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">9 мг</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">12 мг</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">18 мг</div>
-                  </div>
+              <div class="catalog__wrapper-product" id="komplektuyushchie/2">
+                <img
+                  class="catalog__product-image"
+                  src="image/komplektuyushchie/2.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Испаритель Smoant SANTI S-4 DL 0.35ohm
                 </div>
+                <div class="catalog__product-price">250 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-            </div>
-            <div class="filter__group">
-              <div class="filter__group-title">Холодок</div>
-              <div class="filter__group-body">
-                <div class="filter__group-checkbox">
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Да</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Нет</div>
-                  </div>
+              <div class="catalog__wrapper-product" id="komplektuyushchie/3">
+                <img
+                  class="catalog__product-image"
+                  src="image/komplektuyushchie/3.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Испаритель VOOPOO Vinci PnP-VM1 0.3ohm
                 </div>
+                <div class="catalog__product-price">300 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-            </div>
-            <div class="filter__group">
-              <div class="filter__group-title">Тип никотина</div>
-              <div class="filter__group-body">
-                <div class="filter__group-checkbox">
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Без никотина</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Гибрид</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Обычный</div>
-                  </div>
-                  <div class="filter__group-field">
-                    <input class="form__check" type="checkbox" />
-                    <div class="form__check">Солевой</div>
-                  </div>
+              <div class="catalog__wrapper-product" id="komplektuyushchie/4">
+                <img
+                  class="catalog__product-image"
+                  src="image/komplektuyushchie/4.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Картридж Vaporesso Luxe XR MTL 5ml
                 </div>
+                <div class="catalog__product-price">290 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-            </div>
-          </form>
-        </div>
-        <div class="catalog__sortorder">
-          <form class="catalog__sortorder-form">
-            <div class="catalog__sortorder-field">
-              <select class="form__select">
-                <option value="20">20 товаров</option>
-                <option value="30">30 товаров</option>
-                <option value="40">40 товаров</option>
-              </select>
-            </div>
-            <div class="catalog__sortorder-field">
-              <select class="form__select">
-                <option value="sort">По умолчанию</option>
-                <option value="shows">Сначала популярные</option>
-                <option value="price_asc">Сначала недорогие</option>
-                <option value="price_desc">Сначала дорогие</option>
-              </select>
-            </div>
-          </form>
-          <div class="catalog__wrapper">
-            <div class="catalog__wrapper-product" id="zhidkosti/1">
-              <img
-                class="catalog__product-image"
-                src="image/zhidkosti/1.jpeg"
-              />
-              <div class="catalog__product-name">
-                Grape blast (яркий вкус винограда с колой) 20мг STALKER SALT
-                30мл
+              <div class="catalog__wrapper-product" id="komplektuyushchie/5">
+                <img
+                  class="catalog__product-image"
+                  src="image/komplektuyushchie/5.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Картридж SMOK Novo 2 DC MTL 1.4 Ohm
+                </div>
+                <div class="catalog__product-price">390 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-              <div class="catalog__product-price">450 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="zhidkosti/2">
-              <img
-                class="catalog__product-image"
-                src="image/zhidkosti/2.jpeg"
-              />
-              <div class="catalog__product-name">
-                Wild mix (приятный вкус банана с клубникой) 20мг STALKER SALT
-                30мл
+              <div class="catalog__wrapper-product" id="komplektuyushchie/6">
+                <img
+                  class="catalog__product-image"
+                  src="image/komplektuyushchie/6.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Картридж SMOK Novo 2 Mesh 1 Ohm
+                </div>
+                <div class="catalog__product-price">350 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-              <div class="catalog__product-price">450 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="zhidkosti/3">
-              <img
-                class="catalog__product-image"
-                src="image/zhidkosti/3.jpeg"
-              />
-              <div class="catalog__product-name">
-                Ice cola 20мг XL Pride SALT 60мл
+              <div class="catalog__wrapper-product" id="komplektuyushchie/7">
+                <img
+                  class="catalog__product-image"
+                  src="image/komplektuyushchie/7.jpeg"
+                />
+                <div class="catalog__product-name">
+                  Картридж VOOPOO V.THRU Pro Pod 1.2ohm
+                </div>
+                <div class="catalog__product-price">390 руб.</div>
+                <div class="catalog__product-availability">В наличии</div>
+                <button class="catalog__product-basket">
+                  <p class="catalog__product-basket-text">В корзину</p>
+                </button>
               </div>
-              <div class="catalog__product-price">490 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="zhidkosti/4">
-              <img
-                class="catalog__product-image"
-                src="image/zhidkosti/4.jpeg"
-              />
-              <div class="catalog__product-name">
-                ON ICE Sour Apple Dragonfruit 3мг BLAZE SWEET&SOUR 100мл
-              </div>
-              <div class="catalog__product-price">590 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="zhidkosti/5">
-              <img
-                class="catalog__product-image"
-                src="image/zhidkosti/5.jpeg"
-              />
-              <div class="catalog__product-name">
-                Космополитен 20мг Brusko Salt 30мл
-              </div>
-              <div class="catalog__product-price">390 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="zhidkosti/6">
-              <img
-                class="catalog__product-image"
-                src="image/zhidkosti/6.jpeg"
-              />
-              <div class="catalog__product-name">
-                Sour Forest Berries 3мг BLAZE SWEET&SOUR 100мл
-              </div>
-              <div class="catalog__product-price">550 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
-            </div>
-            <div class="catalog__wrapper-product" id="zhidkosti/7">
-              <img
-                class="catalog__product-image"
-                src="image/zhidkosti/7.jpeg"
-              />
-              <div class="catalog__product-name">
-                Peach-Passion 20мг Ultra HOTSPOT 30мл
-              </div>
-              <div class="catalog__product-price">390 руб.</div>
-              <div class="catalog__product-availability">В наличии</div>
-              <button class="catalog__product-basket">
-                <p class="catalog__product-basket-text">В корзину</p>
-              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- about -->
     <section id="about" class="about">
       <div class="about__conteiner">
         <div class="about__content">
@@ -1189,4 +1356,5 @@
       </div>
     </footer>
   </body>
+  <script src="js/menu.js?v=1"></script>
 </html>

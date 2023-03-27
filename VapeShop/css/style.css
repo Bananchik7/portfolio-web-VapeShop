@@ -19,15 +19,11 @@ h6 {
 ul,
 li {
   display: block;
-  padding: 0;
   margin: 0;
 }
 .header__container {
   width: 100%;
   margin: 0 auto;
-}
-header {
-  padding-bottom: 0;
 }
 header a {
   color: black;
@@ -35,26 +31,27 @@ header a {
 .header__nav {
   display: flex;
   width: 100%;
-  height: 5%;
   padding-top: 15px;
   padding-bottom: 10px;
   align-items: center;
-  background-color: aliceblue;
+  background-color: #f0f8ff;
   opacity: 0.7;
 }
 .header__menu {
   display: flex;
+  height: 5%;
 }
 .header__menu li a {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
-}
-.header__menu li {
-  margin-left: 90px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 .header__menu li a:hover {
-  border-bottom: 1px solid black;
+  background-color: #ffffff;
 }
 .header__logo {
   width: 140px;
@@ -65,7 +62,7 @@ header a {
 .header__search {
   width: 35px;
   height: 35px;
-  margin-left: 180px;
+  margin-left: 7%;
 }
 .header__search:hover {
   border-bottom: 1px solid black;
@@ -105,16 +102,10 @@ header a {
   width: 90%;
   margin: 0 auto;
 }
-.menu_list {
+.menu__list {
   display: flex;
   width: 100%;
   height: 5%;
-  background-color: aliceblue;
-}
-.menu__list {
-  display: flex;
-}
-.menu__list li {
   margin-left: 8%;
 }
 .menu__list li a {
@@ -123,6 +114,14 @@ header a {
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 10px;
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.menu__list a:hover {
+  background: #efefef;
 }
 .title__conteiner {
   width: 69%;
@@ -136,12 +135,10 @@ header a {
   font-size: 25px;
   font-weight: bold;
 }
-
 .catalog__conteiner {
   display: flex;
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 3%;
 }
 .catalog__filter {
   width: 25%;
@@ -265,8 +262,8 @@ header a {
   font-size: 18px;
 }
 .about {
-  background: url(../VapeShop/image/about__background.jpeg) no-repeat center top /
-    cover;
+  background: url(../image/about__background.jpeg) no-repeat center top / cover;
+  margin-top: 3%;
 }
 .about__conteiner {
   display: flex;
@@ -315,8 +312,8 @@ header a {
   margin-left: 10%;
   font-weight: bold;
   margin-top: 50px;
-  background: url(../VapeShop/image/delivery__background.png) no-repeat center
-    top / cover;
+  background: url(../image/delivery__background.png) no-repeat center top /
+    cover;
 }
 .delivery__content {
   display: flex;
@@ -351,12 +348,10 @@ header a {
   width: 25%;
   border: 1px solid #c90000;
   padding: 100px 50px 50px 50px;
-  background: url(../VapeShop/image/delivery__table.png) no-repeat center top /
-    cover;
+  background: url(../image/delivery__table.png) no-repeat center top / cover;
 }
 .contact {
-  background: url(../VapeShop/image/contact__background.png) no-repeat center
-    top / cover;
+  background: url(../image/contact__background.png) no-repeat center top / cover;
 }
 .contact__conteiner {
   margin: 0 auto;
@@ -427,6 +422,9 @@ iframe {
   font-size: 20px;
   margin-right: 100px;
   margin-top: 30px;
+}
+.footer__row-menu {
+  padding-left: 10px;
 }
 .footer__row-menu li a {
   text-transform: uppercase;

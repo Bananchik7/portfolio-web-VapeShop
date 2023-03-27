@@ -1,0 +1,15 @@
+.catalog__conteiner__electronnye_sigarety {
+  display: flex;
+}
+.catalog__conteiner__odnorazovye_sigarety {
+  display: none;
+}
+.catalog__conteiner__zhidkosti {
+  display: none;
+}
+.catalog__conteiner__atomayzery {
+  display: none;
+}
+.catalog__conteiner__komplektuyushchie {
+  display: none;
+}
