@@ -218,6 +218,11 @@ header a {
   margin-right: 5%;
   text-align: center;
 }
+.catalog__product-name:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
 .catalog__product-price {
   margin-top: 5%;
   margin-left: 5%;

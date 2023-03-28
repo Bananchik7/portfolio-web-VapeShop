@@ -1,0 +1,155 @@
+#electronnye-sigarety-1 {
+  display: none;
+}
+#electronnye-sigarety-2 {
+  display: none;
+}
+#electronnye-sigarety-3 {
+  display: none;
+}
+#electronnye-sigarety-4 {
+  display: none;
+}
+#electronnye-sigarety-5 {
+  display: none;
+}
+#electronnye-sigarety-6 {
+  display: none;
+}
+#electronnye-sigarety-7 {
+  display: none;
+}
+
+.products__popup {
+  position: fixed;
+  width: 1000px;
+  height: 600px;
+  left: 15%;
+  top: 10%;
+  z-index: 5;
+  display: flex;
+  background: url(../image/contact__background.png);
+  background-color: white;
+}
+.products__popup-background {
+  position: fixed;
+  display: block;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.product__info {
+  display: flex;
+  width: 950px;
+}
+.product__info-image {
+  width: 40%;
+  height: 70%;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+.product__info-details {
+  width: 45%;
+  margin-left: 5%;
+  margin-top: 4%;
+}
+.product__details-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+.product__details-price {
+  margin-top: 5%;
+  font-size: 35px;
+  font-weight: bold;
+  color: #ec0000;
+}
+.product__description-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 7%;
+  margin-bottom: 3%;
+}
+.product__description-feature {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #e9e9e9;
+  padding-left: 5px;
+}
+.product__description-feature:nth-child(2n) {
+  background: #fcfcfc;
+}
+
+.product__feature-title {
+  width: 40%;
+  font-size: 18px;
+  max-width: 250px;
+  min-width: 200px;
+}
+.product__feature-details {
+  min-width: 250px;
+  font-size: 18px;
+  margin-left: 50px;
+}
+.product__details-line {
+  width: 420px;
+  height: 20px;
+  margin-top: 3%;
+}
+.product__button {
+  display: flex;
+}
+.product__button-basket {
+  display: flex;
+  margin-left: 5%;
+  margin-top: 2%;
+  height: 10%;
+  width: 40%;
+  background-color: #b3ffc5;
+  border: 1px solid #b1b9c2;
+  border-radius: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.product__basket-text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: bold;
+  font-size: 18px;
+}
+.product__button-availability {
+  text-align: center;
+  margin-top: 4%;
+  color: #00970a;
+  padding: 0 0 0 45px;
+  font-size: 18px;
+}
+.product__button-availability::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00970a;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+.product__popup-exit {
+  width: 20px;
+  height: 20px;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+.product__popup-exit:hover {
+  width: 25px;
+  height: 25px;
+  text-decoration: underline;
+  cursor: pointer;
+}
