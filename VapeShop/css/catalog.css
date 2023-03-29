@@ -1,3 +1,4 @@
+/* каталог электронные сигареты */
 #electronnye-sigarety-1 {
   display: none;
 }
@@ -17,6 +18,98 @@
   display: none;
 }
 #electronnye-sigarety-7 {
+  display: none;
+}
+
+/* каталог одноразовые сигареты */
+#odnorazovye-sigarety-1 {
+  display: none;
+}
+#odnorazovye-sigarety-2 {
+  display: none;
+}
+#odnorazovye-sigarety-3 {
+  display: none;
+}
+#odnorazovye-sigarety-4 {
+  display: none;
+}
+#odnorazovye-sigarety-5 {
+  display: none;
+}
+#odnorazovye-sigarety-6 {
+  display: none;
+}
+#odnorazovye-sigarety-7 {
+  display: none;
+}
+
+/* каталог жидкости */
+#zhidkosti-1 {
+  display: none;
+}
+#zhidkosti-2 {
+  display: none;
+}
+#zhidkosti-3 {
+  display: none;
+}
+#zhidkosti-4 {
+  display: none;
+}
+#zhidkosti-5 {
+  display: none;
+}
+#zhidkosti-6 {
+  display: none;
+}
+#zhidkosti-7 {
+  display: none;
+}
+
+/* каталог атомайзеры */
+#atomayzery-1 {
+  display: none;
+}
+#atomayzery-2 {
+  display: none;
+}
+#atomayzery-3 {
+  display: none;
+}
+#atomayzery-4 {
+  display: none;
+}
+#atomayzery-5 {
+  display: none;
+}
+#atomayzery-6 {
+  display: none;
+}
+#atomayzery-7 {
+  display: none;
+}
+
+/* каталог комплектующие */
+#komplektuyushchie-1 {
+  display: none;
+}
+#komplektuyushchie-2 {
+  display: none;
+}
+#komplektuyushchie-3 {
+  display: none;
+}
+#komplektuyushchie-4 {
+  display: none;
+}
+#komplektuyushchie-5 {
+  display: none;
+}
+#komplektuyushchie-6 {
+  display: none;
+}
+#komplektuyushchie-7 {
   display: none;
 }
 
@@ -88,11 +181,10 @@
 .product__feature-title {
   width: 40%;
   font-size: 18px;
-  max-width: 250px;
   min-width: 200px;
 }
 .product__feature-details {
-  min-width: 250px;
+  min-width: 270px;
   font-size: 18px;
   margin-left: 50px;
 }
