@@ -117,11 +117,11 @@
   position: fixed;
   width: 1000px;
   height: 600px;
-  left: 15%;
-  top: 10%;
+  margin-left: 15%;
+  margin-top: 5%;
   z-index: 5;
   display: flex;
-  background: url(../image/contact__background.png);
+  background: url(../image/contact__background.png) no-repeat center top / cover;
   background-color: white;
 }
 .products__popup-background {
